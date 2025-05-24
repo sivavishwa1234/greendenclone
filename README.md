@@ -1,28 +1,34 @@
-# Greenden - Plants & Flowers E-commerce Website 🌿
+# Greenden Clone - Plants E-commerce Website 🌿
 
-A responsive e-commerce website clone for Greenden, specializing in artificial and natural plants/flowers. Built with modern web technologies to showcase plant products with elegant UI/UX.
+*An educational project recreating a plant e-commerce website interface. For learning purposes only.*
+
+## 📌 Important Note
+**This project is for educational purposes only.**  
+This is a frontend clone developed to practice web development skills. Not affiliated with any real company or commercial entity.
 
 ## Features ✨
-- **Responsive Design**: Works seamlessly on mobile, tablet, and desktop
-- **Interactive UI**: Smooth animations and hover effects
-- **Product Showcase**: Beautifully displayed plant collections
-- **Customer Reviews**: Testimonial section with star ratings
-- **Newsletter Subscription**: Email collection form
-- **Modern Styling**: Clean, nature-inspired green color scheme
+- Responsive design (mobile, tablet, desktop)
+- Interactive product showcase
+- Customer reviews section
+- Newsletter subscription form
+- Modern green-themed UI
 
 ## Technologies Used 🛠️
-- HTML5 (Semantic markup)
-- CSS3 (Flexbox, Grid, Animations)
-- Tailwind CSS (Utility-first framework)
-- JavaScript (Basic interactivity)
-- Responsive Design (Mobile-first approach)
+- HTML5 & CSS3
+- Tailwind CSS
+- JavaScript (basic DOM manipulation)
+
+## 📚 Educational Focus
+- Responsive layout implementation
+- CSS Grid/Flexbox techniques
+- Mobile-first development
+- UI/UX best practices
 
 ## Pages 📄
-1. **Homepage**: Featured products and company info
-2. **Products**: All available plants with filtering
-3. **Contact**: Customer contact form
+1. `index.html` - Homepage
+2. `products.html` - Product listings
+3. `contact.html` - Contact form
 
-## Installation 💻
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/sivavishwa1234/greenden-clone.git
+## Setup 💻
+```bash
+git clone https://github.com/your-username/greenden-clone.git
