@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenden</title>
+    <!-- Tailwind CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        .product-card {
+            transition: all 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+        @media (min-width: 768px) {
+            .product-image {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Responsive Navbar -->
+    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl">Greenden</h1>
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0-3.75-3.75M17.25 21 21 17.25" />
+        </svg>
+          
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <li>
+                <a href="index.html" class="text-gray-500 hover:text-black underline">Home</a>
+            </li>
+            <li>
+                <a href="products.html" class="text-gray-500 hover:text-black underline ">Products</a>
+            </li>
+            <li>
+                <a href="contact.html" class="text-gray-500 hover:text-black underline">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- Side navbar -->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%;height: 100vh;right: -50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600 md:flex">
+            <li>
+                <a href="index.html" class="text-gray-500 hover:text-black underline">Home</a>
+            </li>
+            <li>
+                <a href="products.html" class="text-gray-500 hover:text-black underline">Products</a>
+            </li>
+            <li>
+                <a href="contact.html" class="text-gray-500 hover:text-black underline">Contact Us</a>
+            </li>
+        </ul>
+    </section>
+    
+    <!-- Products -->
+    <section class="p-4">
+        <h1 class="text-3xl font-bold mt-5 text-center">Our Products</h1>
+        <input id="search" placeholder="Search for a Product..." type="text" class="p-2 border-2 border-green-300 rounded-lg focus:outline-none focus:border-green-500 transition-colors duration-300 w-full max-w-2xl mx-auto my-5 block">
+        
+        <div id="productcontainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
+            <!-- Product Card 1 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="./images/img_5.jpg" class="product-image" alt="Pine Plant">
+                <div class="p-4">
+                    <h2 class="font-semibold text-lg">Pine Plant</h2>
+                    <p class="text-green-600 font-bold">$20.00</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 2 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="./images/img_14.jpg" class="product-image" alt="Banana Plant">
+                <div class="p-4">
+                    <h2 class="font-semibold text-lg">Banana Plant</h2>
+                    <p class="text-green-600 font-bold">$25.00</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 3 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="./images/img_6.jpg" class="product-image" alt="Aloevera Plant">
+                <div class="p-4">
+                    <h2 class="font-semibold text-lg">Aloevera Plant</h2>
+                    <p class="text-green-600 font-bold">$40.00</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 4 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="./images/img_7.jpg" class="product-image" alt="Cherry Plant">
+                <div class="p-4">
+                    <h2 class="font-semibold text-lg">Cherry Plant</h2>
+                    <p class="text-green-600 font-bold">$25.00</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 5 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="./images/img_8.jpg" class="product-image" alt="Papaya Plant">
+                <div class="p-4">
+                    <h2 class="font-semibold text-lg">Papaya Plant</h2>
+                    <p class="text-green-600 font-bold">$25.00</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 6 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="./images/img_9.jpg" class="product-image" alt="Nature Plant">
+                <div class="p-4">
+                    <h2 class="font-semibold text-lg">Nature Plant</h2>
+                    <p class="text-green-600 font-bold">$35.00</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 7 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="./images/img_10.jpg" class="product-image" alt="Climber Plant">
+                <div class="p-4">
+                    <h2 class="font-semibold text-lg">Climber Plant</h2>
+                    <p class="text-green-600 font-bold">$65.00</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 8 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="./images/img_11.jpg" class="product-image" alt="Sunflower Plant">
+                <div class="p-4">
+                    <h2 class="font-semibold text-lg">Sunflower Plant</h2>
+                    <p class="text-green-600 font-bold">$15.00</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 9 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="./images/img_12.jpg" class="product-image" alt="Guava Plant">
+                <div class="p-4">
+                    <h2 class="font-semibold text-lg">Guava Plant</h2>
+                    <p class="text-green-600 font-bold">$25.00</p>
+                </div>
+            </div>
+            
+            <!-- Product Card 10 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="./images/img_13.jpg" class="product-image" alt="Decor Plant">
+                <div class="p-4">
+                    <h2 class="font-semibold text-lg">Decor Plant</h2>
+                    <p class="text-green-600 font-bold">$55.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!-- Footer -->
+    <section class="bg-green-100 p-10">
+        <div class="flex flex-col gap-5">
+            <h2 class="text-4xl font-bold">Greenden</h2>
+            <p>Receive real-time alerts and notifications on your smartphone, keeping you informed about any changes or issues with your plants.</p>
+            <p class="font-bold text-green-800">Copyright @c Greenden. All rights reserved.</p>
+        </div>
+    </section>
+    
+    <script src="product.js"></script>
+</body>
+</html>
